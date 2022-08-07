@@ -1,0 +1,19 @@
+import math
+x = float(input("Enter x: "))
+y = float(input("Enter y: "))
+z = float(input("Enter z: "))
+#x,y,z = 5.0,5.0,5.0
+a1 = (x**y) + z
+a2 = math.cos(2*math.pi)+math.log(x)
+a3 = abs(x) + abs(y)
+a4 = math.sqrt((x**2) + (y**2) + (z**2))
+a5 = math.sin(x)**2 + math.cos(x)**2
+a6 = (x+y)**(1/5)
+a7 = (y**x)
+print("a1 =", "{:.2f}".format(a1))
+print("a2 =", "{:.2f}".format(a2))
+print("a3 =", "{:.2f}".format(a3))
+print("a4 =", "{:.2f}".format(a4))
+print("a5 =", "{:.2f}".format(a5))
+print("a6 =", "{:.2f}".format(a6))
+print("a7 =", "{:.2f}".format(a7))
