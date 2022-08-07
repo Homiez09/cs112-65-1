@@ -1,3 +1,7 @@
+hours = int(input('Enter number of hours (0-20): '))
+minutes = int(input('Enter number of minutes (0-59): '))
+buyAmt = int(input('Enter shopping amount: '))
+
 price = 0
 
 if hours >= 0 and minutes >= 0 and minutes <= 59 and hours <= 20 and not(hours == 20 and minutes > 0):
