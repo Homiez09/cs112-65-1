@@ -1,20 +1,23 @@
-while True:
-    n = int(input("Enter a number: "))
-    if n == 0:
-        print("End of program, goodbye.")
-        break
-    elif n <= 1:
-        print("Invalid input, try again.")
-    elif n > 1:
-        count = 0
-        i = 1
-        while i <= n:
-            if n % i == 0:
-                count += 1
-            i += 1
-        ans = str(n)
-        if count == 2:
-            ans += " is a prime number."
+n = int(input("Enter a number: ")) + 1
+i = 0
+j = 0
+if n < 1:
+    print("Invalid input, program terminates.")
+else:
+    while i < n:
+        if i < 2:
+            print(f"{i}! = 1 = 1")
         else:
-            ans += " is not a prime number."
-        print(ans)
+            text = f"{i}! = "
+            result = 1
+            while j < i:
+                text += str(i-j)
+                result *= i-j
+                if j < i-1:
+                    text += " x "
+                else:
+                    text += " = "
+                j+=1
+            j = 0
+            print(text + f"{result}")
+        i += 1
