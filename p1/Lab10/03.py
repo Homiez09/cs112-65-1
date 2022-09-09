@@ -17,10 +17,7 @@ while True:
         score.append(n)
     else:
         print("Score is out of range.")
-        n = float(input("Enter score: "))
-        if n == -1:
-            break
-        score.append(n)
+
 if score:
     print("Maximum score is {:.2f}.".format(max(score)))
     print("Minimum score is {:.2f}.".format(min(score)))
