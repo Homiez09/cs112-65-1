@@ -16,5 +16,5 @@ for i in range(len(m)):
     if m[i] in vowel:
         species += m[i+1:]
         break
-
+    
 print(species)
