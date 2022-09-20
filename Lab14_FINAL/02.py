@@ -11,10 +11,12 @@ for i in range(len(f)):
     if count == 0:
         break
     species += f[i]
-    
+
 for i in range(len(m)):
     if m[i] in vowel:
         species += m[i+1:]
         break
-    
+
+if species == f:
+    species += m
 print(species)
