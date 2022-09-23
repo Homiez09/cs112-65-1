@@ -1,0 +1,6 @@
+content = input()
+find = input()
+replace = input()
+print(content.find(find))
+print(content.count(find))
+print(content.replace(find,replace))
