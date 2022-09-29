@@ -9,8 +9,10 @@ def one():
 
 def create_factors_3_7(n):
     ls = []
-    for i in range(n+1):
+    i = 1
+    while len(ls) < n:
         if i % 3 == 0 or i % 7 == 0:
             ls.append(i)
-    return ls[1:]
-print(create_factors_3_7(15))
+        i += 1
+    return ls
+print(create_factors_3_7(16))
