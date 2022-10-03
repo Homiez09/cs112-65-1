@@ -1,6 +1,5 @@
 def one():
     ls = []
-
     while True:
         word = input()
         if word == "":
