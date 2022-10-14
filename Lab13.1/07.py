@@ -3,7 +3,7 @@ def extract_string(text) :
     n = ''
     for i in range(len(text)):
         n += text[i]
-        if i == len(text)-1 or (text[i].isdigit() and not text[i+1].isdigit()):
+        if i == len(text)-1 or (text[i].isdigit() and not text[i+1].isdigit()) or (not text[i].isdigit() and text[i+1].isdigit()) :
             ls.append(int(n)) if n.isdigit() else ls.append(n)
             n = ''
     return ls
