@@ -3,7 +3,6 @@ def translate(ls: list):
     for i in ls:
         x = i.split("=")
         ls_dict[x[0].strip()] = int(x[1].strip())
-        print(ls_dict)
     return ls_dict
     
 def export(var: list, code: list):
@@ -11,11 +10,10 @@ def export(var: list, code: list):
     result = []
     for i in code: 
         content = i
-        for k in ["{", "}"]:
-            content = content.replace(k, "|") 
+
         for j in var:
             if j in content: 
-                content = content.replace(f"|{j}|", str(var[j]))
+                content = content.replace(f"{chr(123)}{j}{chr(125)}", str(var[j]))
         result.append(content)
     return result
             

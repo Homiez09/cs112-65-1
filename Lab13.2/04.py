@@ -32,7 +32,6 @@ else:
         e += i
     ls = [s+int(s_date[0]), e+int(e_date[0])]
     ls.sort()
-    print(ls)
     for i in range(sunday, 365, 7):
         if i >= ls[0] and i <= ls[1]:
             count += 1
