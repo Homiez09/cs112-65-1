@@ -8,7 +8,7 @@ while True:
     x = i.split("=")
     value[x[0].strip()] = x[1].strip()
 print('Enter your program:')
-print(value)
+
 while True:
     s = input()
     if s=='-1': 
