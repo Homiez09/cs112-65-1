@@ -1,9 +1,2 @@
-word = input().split(" ")
-result = ""
-for i in word:
-    if i not in ['for', 'and', 'with', 'of']:
-        result += i.capitalize() + " "
-    else:
-        result += i + " "
-
-print(result)
+word = input().title().replace('For', 'for').replace('And', 'and').replace('With', 'with').replace('Of', 'of')
+print(word)

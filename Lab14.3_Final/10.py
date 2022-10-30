@@ -17,7 +17,7 @@ def scoreCal(card: str):
                 higher = int(list_card[i])
             count += int(list_card[i])
 
-    print(higher)
+    print(higher if higher != 0 else 'A')
     return count if count <= 21 else 'busted'
 
 print(scoreCal(input()))
